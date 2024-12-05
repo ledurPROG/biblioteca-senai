@@ -19,16 +19,16 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Home"
+        initialRouteName="LIVRARIAS SENAI"
         screenOptions={{
           headerStyle: {
-            backgroundColor: '#0038', // Cor do fundo da barra de ferramentas
+            backgroundColor: '#003D73', // Cor do fundo da barra de ferramentas
           },
           headerTintColor: '#fff', // Cor do texto do título na barra
           headerTitleAlign: 'center', // Alinhar o título no centro
         }}
       >
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="LIVRARIAS SENAI" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -43,10 +43,11 @@ const styles = StyleSheet.create({
     paddingTop: 50,
   },
   title: {
-    fontSize: 24,
+    fontSize: 21,
     fontWeight: 'bold',
-    textAlign: 'center',
+    textAlign: 'left',
     marginBottom: 20,
-    fontFamily: 'Product-Sans',  // Supondo quecd
+    fontFamily: 'Product-Sans',  
+    headerTitleAlign: 'left'
   }
 });
